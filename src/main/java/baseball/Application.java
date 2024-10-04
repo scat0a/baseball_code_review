@@ -46,6 +46,9 @@ public class Application {
             if(Objects.equals(computerNumbers.get(i), answers.get(i))){
                 strike++;
             }
+            if(!Objects.equals(computerNumbers.get(i), answers.get(i))&& computerNumbers.contains(answers.get(i))){
+                ball++;
+            }
         }
 
         System.out.println(strike);
